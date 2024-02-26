@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 # Script that accepts a string as an argument to ping the targetted IP 5 Times
+if [ "$#" -ne 1 ]; then
+	echo "Usage: $0 {IP_ADDRESS}"
+	exit 1
+fi
 ping -c 5 $1
