@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that accepts a string as an argument to ping the targetted IP 5 Times
+ping -c 5 $1
